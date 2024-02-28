@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="w3.css">
+    <title>GET YOUR HEALTHY</title>
+</head>
+<body>
+    <div class="w3-container">
+        <img src="assets/bann.png" width="101%">
+    </div>
+    <div class="w3-bar w3-blue w3-card-4">
+        <button class="w3-bar-item w3-button" onclick="openAbout('home')"><img src="assets/Home-1.png" width="37" height="37"></button>
+        <button class="w3-bar-item w3-button" onclick="openAbout('akun')"><font size="5">AKUN</font></button>
+        <div class="w3-dropdown-hover">
+            <button class="w3-button"><font size="5">KALKULATOR KESEHATAN</font></button>
+            <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                <button class="w3-bar-item w3-button" onclick="openAbout('BMI')">BADAN IDEAL</button>
+                <button class="w3-bar-item w3-button" onclick="openAbout('gizi')">KADAR GIZI</button>
+            </div>
+        </div>
+        <button class="w3-bar-item w3-button w3-right" onclick="openAbout('user')"><img src="assets/user1.png" width="37" height="37"></button>
+        <div class="w3-dropdown-hover w3-right">
+            <button class="w3-button"><font size="5">KONSULTASI</font></button>
+            <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                <button class="w3-bar-item w3-button" onclick="openAbout('jamal')">dr. Jamal</button>
+                <button class="w3-bar-item w3-button" onclick="openAbout('wina')">dr. Wina</button>
+                <button class="w3-bar-item w3-button" onclick="openAbout('juned')">dr. Juned</button>
+            </div>
+        </div>
+
+        <div id="home" class="w3-container about" style="display: block;">
+            <div class="w3-container w3-animate-left">
+                <center><img src="assets/bann4.png" width="85%"></center>
+            </div>
+            <br>
+        </div>
+
+        <div id="akun" class="w3-container about" style="display:none">
+            <div class="w3-container w3-blue w3-animate-bottom">
+                <br>
+                <center>
+                <div class="w3-container"><h3>DATA PRIBADI</h3></div>
+                <form class="w3-container" id="data_pribadi">
+                    <table>
+                        <tr><td colspan="15"><hr>
+                        <tr><td colspan="30"><label>NAMA LENGKAP<input class="w3-input" type="text" name="nama"></label><td>
+                        <tr><td colspan="30"><label>EMAIL<input class="w3-input" type="text" name="email" placeholder="Email@gmail.com"></label><td>
+                        <tr><td><p></p>
+                        <tr><td>TEMPAT LAHIR<td>:<td><select class="w3-select" name="kota">
+                            <option value="" disabled selected>KOTA</option>
+                            <option>JAKARTA
+                            <option>BANDUNG
+                            <option>SUKABUMI
+                            <option>CIANJUR
+                            <option>BOGOR
+                            <option>DEPOK</option><td><td>
+                            </select>
+                            <td><td>TANGGAL LAHIR<td>:<td><input type="date" name="tanggal">
+                        <tr><td><p></p>
+                        <tr><td>JENIS KELAMIN<td>:<td><input class="w3-radio" type="radio" name="male">PRIA
+                            <tr><td><td><td><input class="w3-radio" type="radio" name="female">WANITA
+                        <tr><td><p></p>
+                        <tr><td colspan="30"><label>NOMOR HP<input class="w3-input" type="text" name="nomorhp"></label><td>
+                        <tr><td><p></p>
+                        <tr><td colspan="30"><label>ALAMAT</label>
+                            <p><textarea name="alamat" cols="70" rows="5" name="alamat"></textarea>
+                    </table> 
+                </form>
+                <br>
+                </center>
+                <br>
+                <div class="w3-container">
+                    <center>
+                        <input type="button" class="w3-button w3-yellow w3-round-xxlarge" value="SUBMIT" onclick="submitDP()">
+                        <input type="button" class="w3-button w3-yellow w3-round-xxlarge" value="RESET" onclick="reset()">
+                    </center>
+                </div>
+                <br>
+            </div>
+        </div>
+
+        <div id="user" class="w3-container about" style="display:none">
+            <div class="w3-container w3-blue w3-animate-left">
+                <center>
+                    <br>
+                    <h2>KELOMPOK</h2>
+                    <table>
+                        <tr><td colspan="4"><hr>
+                        <tr><td><font size="5">Putra Fajar Dimansyah.SH</font><td> <td><font size="5">2332311047</font>
+                        <tr><td><font size="5">Moh Idza Fauzan</font><td> <td><font size="5">2332311048</font>
+                        <tr><td><font size="5">Ai Raisya Nurendah</font><td> <td><font size="5">2332311049</font>
+                        <tr><td><font size="5">Gianty Sugilarini</font><td> <td><font size="5">2332311050</font>
+                        <tr><td><font size="5">Sri Oktaviani Nur Khikmah</font><td> <td><font size="5">2332311051</font>
+                        <tr><td><font size="5">Faliza Aliyatu Adz Dzihni</font><td> <td><font size="5">2332311070</font>
+                        <tr><td><font size="5">Muhammad Zaidan Ichsan</font><td> <td><font size="5">2332311081</font>
+                        <tr><td><font size="5">Nabila Alifia Achsan</font><td> <td><font size="5">2332311085</font>
+                        <tr><td><font size="5">Treysia Saskia Purnama</font><td> <td><font size="5">2232311086</font>
+                        <tr><td><font size="5">Moch Kelpi</font><td> <td><font size="5">2332311087</font>
+                    </table>
+                    <br>
+                    <br>
+                </center>
+            </div>
+        </div> 
+
+        <div id="BMI" class="w3-container about" style="display:none">
+            <div class="w3-container w3-blue w3-animate-bottom">
+            <form name="form" class="w3-container" id="bmi_f">
+                <center>
+                    <br>
+                    <h2>BODY MASS INDEX</h2>
+                    <table>
+                        <tr><td colspan="6"><hr>
+                        <p><tr><td>JENIS KELAMIN<td>:<td><input class="w3-radio" type="radio" name="gender" value="male">PRIA
+                            <tr><td><td><td><input class="w3-radio" type="radio" name="gender" value="female">WANITA</p>
+                        <tr><td>UMUR<td>:<td><select class="w3-select" name="umur">
+                            <option value="" disabled selected>Tahun</option>
+                            <option>13-15 Tahun
+                            <option>16-18 Tahun
+                            <option>19-29 Tahun</option>
+                            </select>
+                        <tr><td>TINGGI BADAN<td>:<td><input class="w3-input" type="text" name="tinggi"><td>cm
+                        <tr><td>BERAT BADAN<td>:<td><input class="w3-input" type="text" name="berat"><td>Kg
+                        <br>
+                        <tr><td colspan="4"><hr>
+                        <tr><td colspan="4">
+                            <tr><td colspan="6"><label>HASIL PERHITUNGAN BMI<input class="w3-input" type="text" name="operasi"></label>
+                            <tr><td colspan="6"><label>KETERANGAN<input class="w3-input" type="text" name="keterangan"></label>
+                        <br>
+                        <tr><td colspan="4"><hr>
+                        <br>
+                        <center>
+                            <input type="button" class="w3-button w3-yellow w3-round-xxlarge" value="PROSES" onclick="bmiResult()">
+                            <input type="button" class="w3-button w3-yellow w3-round-xxlarge" value="RESET" onclick="reset()">
+                        </center></td>
+                        <br>
+                    </table>
+                    <br>
+                    <div class="w3-panel w3-round-xlarge w3-white">
+                        <br>
+                        <center>
+                            <label><font size="5">LANJUT KONSULTASI?</font></label>
+                            <br>
+                            <input type="button" class="w3-button w3-yellow w3-round-xxlarge" value="  YA  " onclick="openAbout('jamal')">
+                            <input type="button" class="w3-button w3-yellow w3-round-xxlarge" value="TIDAK" onclick="openAbout('home')">
+                        </center>
+                        <br>
+                    </div>
+                    <br>
+                </center> 
+            </form>
+            </div>
+        </div>
+
+        <div id="gizi" class="w3-container about" style="display:none">
+            <div class="w3-container w3-blue w3-animate-bottom">
+                <br>
+                <center>
+                <h2>CEK KADAR GIZI</h2>
+                <form name="form1" class="w3-container" id="gizi_f">
+                    <table>
+                        <tr><td colspan="6"><hr>
+                            <p><tr><td>JENIS KELAMIN<td>:<td><input class="w3-radio" type="radio" name="gender" value="male">PRIA
+                                <tr><td><td><td><input class="w3-radio" type="radio" name="gender" value="female">WANITA</p>
+                            <tr><td>UMUR<td>:<td><select class="w3-select" name="umur">
+                                <option value="" disabled selected>Tahun</option>
+                                <option>13-15 Tahun
+                                <option>16-18 Tahun
+                                <option>19-29 Tahun</option>
+                                </select>
+                        <tr><td colspan="6"><hr>
+                        <tr><td colspan="4">
+                            <center>
+                                <input type="button" class="w3-button w3-yellow w3-round-xxlarge" value="PROSES" onclick="gizi()">
+                                <input type="button" class="w3-button w3-yellow w3-round-xxlarge" value="RESET" onclick="reset()">
+                            </center></td>
+                        <br>
+                        <tr><td colspan="6"><hr>
+                        <br>
+                        <p><tr><td colspan="6"><label><font size="3">KETERANGAN KONSUMSI GIZI HARIAN</font></label>
+                        <tr><td colspan="6"><hr>
+                        <tr><td colspan="4"><label>PROTEIN<input class="w3-input" type="text" name="protein"></label><td>g/hari</td>
+                        <tr><td colspan="4"><label>LEMAK<input class="w3-input" type="text" name="lemak"></label><td>g/hari</td>
+                        <tr><td colspan="4"><label>KARBOHIDRAT<input class="w3-input" type="text" name="karbohidrat"></label><td>g/hari</td>
+                        <tr><td colspan="4"><label>SERAT<input class="w3-input" type="text" name="serat"></label><td>g/hari</td>
+                        <tr><td colspan="4"><label>AIR<input class="w3-input" type="text" name="air"></label><td>ml/hari</td>
+                        <br>
+                    </table>
+                    </center>
+                </form>
+                <div class="w3-panel w3-round-xlarge w3-white">
+                    <br>
+                    <center>
+                        <label><font size="5">LANJUT KONSULTASI?</font></label>
+                        <br>
+                        <input type="button" class="w3-button w3-yellow w3-round-xxlarge" value="  YA  " onclick="openAbout('juned')">
+                        <input type="button" class="w3-button w3-yellow w3-round-xxlarge" value="TIDAK" onclick="openAbout('home')">
+                    </center>
+                    <br>
+                </div>
+                <br>
+            </div>
+        </div>
+
+        <div id="jamal" class="w3-container about" style="display:none">
+            <div class="w3-container w3-blue w3-animate-left">
+                <br>
+                <center>
+                    <table>
+                        <tr><td><img src="assets/jae.jpeg" width="300" height="400">
+                        <p><tr><td><center><font size="5">dr. JAMAL</font></center>
+                        <tr><td colspan="4"><hr>
+                        <tr><td><center><img src="assets/whatsapp1.png" width="40" height="40"> 081572488455</center>
+                    </table>
+                </center>
+                <br>
+            </div>
+        </div>
+
+        <div id="wina" class="w3-container about" style="display:none">
+            <div class="w3-container w3-blue w3-animate-left">
+                <br>
+                <center>
+                    <table>
+                        <tr><td><img src="assets/winter.jpeg" width="330" height="380">
+                        <p><tr><td><center><font size="5">dr. WINA</font></center>
+                        <tr><td colspan="4"><hr>
+                        <tr><td><center><img src="assets/whatsapp1.png" width="40" height="40"> 081280290885</center>
+                    </table>
+                </center>
+                <br>
+            </div>
+        </div>
+        
+        <div id="juned" class="w3-container about" style="display:none">
+            <div class="w3-container w3-blue w3-animate-left">
+                <br>
+                <center>
+                    <table>
+                        <tr><td><img src="assets/jk.jpeg" width="300" height="420">
+                        <p><tr><td><center><font size="5">dr. JUNED</font></center>
+                        <tr><td colspan="4"><hr>
+                        <tr><td><center><img src="assets/whatsapp1.png" width="40" height="40"> 085827436690</center>
+                    </table>
+                </center>
+                <br>
+            </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
